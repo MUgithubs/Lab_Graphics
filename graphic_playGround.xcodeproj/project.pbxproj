@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		56A98409221FB3A500B7FC7B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56A98408221FB3A500B7FC7B /* main.cpp */; };
+		56A9842A221FBF3800B7FC7B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A98429221FBF3800B7FC7B /* OpenGL.framework */; };
+		56A9842C221FBF4600B7FC7B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A9842B221FBF4600B7FC7B /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,14 @@
 /* Begin PBXFileReference section */
 		56A98405221FB3A500B7FC7B /* graphic_playGround */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = graphic_playGround; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A98408221FB3A500B7FC7B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		56A9840F221FB3C900B7FC7B /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		56A98410221FB41300B7FC7B /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		56A98411221FB49200B7FC7B /* render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		56A98412221FB76D00B7FC7B /* environment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = environment.h; sourceTree = "<group>"; };
+		56A98429221FBF3800B7FC7B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		56A9842B221FBF4600B7FC7B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		56A9842D221FC20600B7FC7B /* bresenham.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bresenham.h; sourceTree = "<group>"; };
+		56A9842E221FC25400B7FC7B /* point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A9842C221FBF4600B7FC7B /* GLUT.framework in Frameworks */,
+				56A9842A221FBF3800B7FC7B /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +55,7 @@
 			children = (
 				56A98407221FB3A500B7FC7B /* graphic_playGround */,
 				56A98406221FB3A500B7FC7B /* Products */,
+				56A98428221FBF3800B7FC7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +71,23 @@
 			isa = PBXGroup;
 			children = (
 				56A98408221FB3A500B7FC7B /* main.cpp */,
+				56A98411221FB49200B7FC7B /* render.h */,
+				56A9842D221FC20600B7FC7B /* bresenham.h */,
+				56A98410221FB41300B7FC7B /* camera.h */,
+				56A9840F221FB3C900B7FC7B /* matrix.h */,
+				56A98412221FB76D00B7FC7B /* environment.h */,
+				56A9842E221FC25400B7FC7B /* point.h */,
 			);
 			path = graphic_playGround;
+			sourceTree = "<group>";
+		};
+		56A98428221FBF3800B7FC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56A9842B221FBF4600B7FC7B /* GLUT.framework */,
+				56A98429221FBF3800B7FC7B /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
